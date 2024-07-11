@@ -1,22 +1,5 @@
 let enteredCode = "";
 
-async function apiRequest(url) {
-   try {
-      const { data } = await axios.get(url, {
-         headers: { 'Content-Type': 'application/json' }
-      });
-
-      if (data.success) {
-         console.log(data.access_token)
-         alert(`Hello, ${data.name}`)
-      } else {
-         alert("Invalid Code")
-      }
-   } catch (error) {
-      console.log(`Houve um erro: `, error)
-   }
-}
-
 function inputFocus(index) {
    const input = document.querySelector(`[data-index='${index}']`);
    input && input.focus();
@@ -28,8 +11,6 @@ function handleSubmitEvent(auth_code) {
       input.parentNode.classList.remove("active");
       inputFocus(0);
    });
-
-   apiRequest(`/api/verify/?email=${"by_thiagobxk@gmail.com"}&auth_code=${auth_code}`);
 }
 
 function handleInputEvent(event, element) {
