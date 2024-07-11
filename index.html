@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="icon">
+        <img src="./icons/security-icon.svg" />
+      </div>
+      <h2 class="title">Authenticate Your Account</h2>
+      <p class="paragraph">
+        A 6-digit code has been sent to the email by_thiagobxk@gmail.com please
+        confirm
+      </p>
+
+      <div class="input-container">
+        <div class="input-box">
+          <input
+            type="number"
+            oninput="handleInputEvent(event, this)"
+            data-index="0"
+          />
+        </div>
+        <div class="input-box">
+          <input
+            type="number"
+            oninput="handleInputEvent(event, this)"
+            data-index="1"
+          />
+        </div>
+        <div class="input-box">
+          <input
+            type="number"
+            oninput="handleInputEvent(event, this)"
+            data-index="2"
+          />
+        </div>
+        <div class="input-box">
+          <input
+            type="number"
+            oninput="handleInputEvent(event, this)"
+            data-index="3"
+          />
+        </div>
+        <div class="input-box">
+          <input
+            type="number"
+            oninput="handleInputEvent(event, this)"
+            data-index="4"
+          />
+        </div>
+        <div class="input-box">
+          <input
+            type="number"
+            oninput="handleInputEvent(event, this)"
+            data-index="5"
+          />
+        </div>
+      </div>
+      <!-- <button class="submit-button disabled">Continuar</button> -->
+
+      <p class="small-paragraph">
+        * We always seek to provide a safer environment for our potential
+        employees. partners.
+      </p>
+    </div>
+  </body>
+</html>
